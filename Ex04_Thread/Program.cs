@@ -45,7 +45,7 @@ namespace Ex04_Thread
                                          // unstart 상태
 
             // start상태
-            th.Start(); // 스택이 하나 생성되고 그 스택에 program.Print 올려 놓고 자기는 종료(스타트 함수는 종료)
+            th.Start(); // 스택이 하나 생성되고 그 스택에 program.Print 올려 놓고 자기는 종료(스타트 함수는 종료, delegate 함수 올려놓기만 하고 끝, main Thread에서 실행)
             th2.Start();// 스택이 하나 생성되고 그 스택에 Program.sPrint 올려 놓고 자기는 종료(스타트 함수는 종료)
             Console.WriteLine("나 메인이야 (나도 스레드)");
 
